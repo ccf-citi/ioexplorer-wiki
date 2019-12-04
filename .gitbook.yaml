@@ -5,4 +5,4 @@ structure:
   summary: SUMMARY.md
 
 redirects:
-  clinical-fields: ./internals/clinical-fields.md
+  clinical-fields: internals/clinical-fields.md
