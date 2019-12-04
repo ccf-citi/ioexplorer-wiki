@@ -153,23 +153,7 @@ BRCA2 q2-q4
 
 To refer to a clinical variable in the AFL, use any of the valid aliases for the clinical variable. These valid aliases can be found on the [Clinical Fields page](./clinical-fields).
 
-[Clinical Fields page](asdfasdf)
-
-[Clinical Fields page](/asdfasdf)
-
-[Clinical Fields page](./asdfasdf)
-
-[Clinical Fields page](clinical-fields)
-
-[Clinical Fields page](/clinical-fields)
-
-[Clinical Fields page](./clinical-fields)
-
-[Clinical Fields page](../clinical-fields)
-
-[Clinical Fields page](#clinical-fields)
-
-[Clinical Fields page](#/clinical-fields)
+[Clinical Fields page](../internals/clinical-fields)
 
 ### Gene Symbols
 
