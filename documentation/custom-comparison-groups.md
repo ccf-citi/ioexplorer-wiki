@@ -10,37 +10,37 @@ Samples with a TMB value between 0 and 2 will be classified in G1; those with a 
 tmb [0, 2, 4, 8, 16, 32]
 ```
 
-###### Ex: Custom Stage Groups
-Samples with Stage value of [`M0`] will be in group `m0`. Samples with the Stage value in [`M1`, `M1A`, `M1B`, `M1C`] will be in group `m1`. All samples with Stage values that do not match fall within these groups will be ignored.
+###### Ex: Metastatic Stage with two named categories
+Samples with the stage `M0` will be assigned to the `m0` category. Samples with any of the stages `M1`, `M1A`, `M1B`, or `M1C` will be assigned to the `m1` category. Samples with any other stage value will not be assigned to a group and therefore will not be displayed on the plot.
 ```
 m_stage {(m0, [M0]), (m1, [M1, M1A, M1B, M1C])}
 ```
 
-###### Ex: Five groups of TP53 Gene Expression
+###### Ex: Five groups of TP53 gene expression
 The selected samples are automatically classified into evenly distributed groups based on gene expression values for the TP53 gene. The first group, `G0`, will consist of the first 20% of samples ranked by gene expression level in ascending order; The last group, `G4`, will consist of the last 20% of samples.
 ```
 TP53 expression 5 groups
 ```
 
-###### Ex: Any TP53 Mutation
+###### Ex: Any TP53 mutation
 The selected samples are classified into two groups: those with a TP53 mutation and those without one.
 ```
 TP53 any
 ```
 
-###### Ex: All TP53 Mutations
+###### Ex: All TP53 mutations
 The selected samples are classified into five groups based on the type of its TP53 variant. The `Frame Shift` group includes `Frame_Shift_Ins` and `Frame_Shift_Ins` variants. The `In Frame` group includes `In_Frame_Ins` and `In_Frame_Del` variants. The `Missense` group includes the `Missense_Mutation` variant. The `Nonsense` group includes the `Nonsense_Mutation`. The `Splice Site` group includes the `Splice_Site` variant. If a samples does not have any TP53 variants, it is assigned to the `None` group.
 ```
 TP53 all
 ```
 
-###### Ex: Custom TP53 Variant Groups
+###### Ex: Custom TP53 variant groups
 The selected samples can be classified into custom groups based on the type of its TP53 variant. In this example, there are two custom groups: the `point` group includes samples with the `Missense_Mutation` and `Nonsense_Mutation` variants and the `indel` group includes the `In_Frame_Ins`, `In_Frame_Del`, `Frame_Shift_Ins`, `Frame_Shift_Del` variants. Any samples that do not have these names variants are classified into the `None` group.
 ```
 TP53 {(point, [missense, nonsense]), (indel, [in frame, frame shift])}
 ```
 
-###### Ex: Multi-Gene Variant Groups
+###### Ex: Multi-Gene mutation
 The selected samples are classified into groups based on the existence of variants in a list of genes.
 ```
 (TP53, CDKN2A) any
