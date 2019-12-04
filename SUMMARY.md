@@ -1,15 +1,11 @@
 # Summary
 
-## Use headings to create page groups like this one
+## Documentation
 
-* [First page's title](page1/README.md)    
-    * [Some child page](page1/page1-1.md)    
-    * [Some other child page](part1/page1-2.md)
+* [Advanced Filter Language](documentation/advanced-filter-language.md)
+* [Custom Comparison Groops](documentation/custom-comparison-groups.md)
+* [Subject to Sample Mapping](documentation/subject-to-sample-mapping.md)
     
-* [Second page's title](page2/README.md)    
-    * [Some child page](page2/page2-1.md)    
-    * [Some other child page](part2/page2-2.md)    
-    
-## A second-page group
+## Internals
 
-* [Yet another page](another-page.md)
+* [Clinical Fields](internals/clinical-fields.md)
