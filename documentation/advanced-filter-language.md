@@ -153,6 +153,13 @@ BRCA2 q2-q4
 
 To refer to a clinical variable in the AFL, use any of the valid aliases for the clinical variable. These valid aliases can be found on the [Clinical Fields page](./clinical-fields).
 
+[Clinical Fields page](clinical-fields)
+[Clinical Fields page](/clinical-fields)
+[Clinical Fields page](./clinical-fields)
+[Clinical Fields page](../clinical-fields)
+[Clinical Fields page](#clinical-fields)
+[Clinical Fields page](#/clinical-fields)
+
 ### Gene Symbols
 
 The AFL uses the HUGO symbol for human gene symbols. The rules pertinent to AFL users are listed below.
