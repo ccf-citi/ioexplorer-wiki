@@ -1,3 +1,5 @@
+## Introduction
+
 The AFL is a language intended to represent logical expressions for the selection of samples. In this language, there are filter rules and operators. Each rule, of which there are several categories and subtypes, specifies a subset of samples that should be used in statistical tests and visualizations. Rules can be combined and modulated by the operators for a functionally complete and thoroughly effective selection utility.
 
 The AFL exhibits [functional completeness](https://en.wikipedia.org/wiki/Functional_completeness), meaning the available operators can be combined to produce all possible filter rule [truth tables](https://en.wikipedia.org/wiki/Truth_table).
