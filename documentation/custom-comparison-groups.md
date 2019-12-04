@@ -51,21 +51,84 @@ Users can classify samples into the Cartesian product of single-rule groups.
 ```
 TP53 any X tmb [0, 2, 4, 8, 16, 32]
 ```
-This rule leads to 10 groups.
+This rule leads to 10 distinct groups.
 
-|                    | TMB G0 | TMB G1 | TMB G2 | TMB G3 | TMB G4 |
-| ------------------ | ------ | ------ | ------ | ------ | ------ |
-|  TP53 w/ variant   |        |        |        |        |        |
-|  TP53 w/o variant  |        |        |        |        |        |
+|                    | TMB G0            | TMB G1            | TMB G2            | TMB G3            | TMB G4            |
+| ------------------ | ----------------  | ----------------  | ----------------  | ----------------  | ----------------  |
+|  TP53 w/  variant  | TP53 w/  x TMB G0 | TP53 w/  x TMB G1 | TP53 w/  x TMB G2 | TP53 w/  x TMB G3 | TP53 w/  x TMB G4 |
+|  TP53 w/o variant  | TP53 w/o x TMB G0 | TP53 w/o x TMB G1 | TP53 w/o x TMB G2 | TP53 w/o x TMB G3 | TP53 w/o x TMB G4 |
 
-## Group Types
+## Comparison Groups
 
-### Clinical Numeric Field Groups
+Comparison Group types are split into three main categories.
+ * Clinical Groups
+ * Mutation Groups
+ * Expression Groups
 
-### Clinical String Field Groups
+### Clinical Groups
 
-### Clinical Enum Field Groups
+#### Clinical Numeric Field Groups
+
+Clinical Numeric Field groups are those based on a numeric-type clinical variable. Using a custom comparison group for a numeric-type clinical field gives the user the ability to define the exact intervals for which the selection of samples will be divided.
+
+##### Ex: TMB with 5 groups
+```
+tmb [0, 2, 4, 8, 16, 32]
+```
+Samples with a TMB value between 0 and 2 will be classified in G1; those with a TMB value between 2 and 4 will be classified in G2, etc. Samples with a TMB value above 32 will not be assigned to a group and therefore will not be displayed on the plot.
+
+#### Clinical String Field Groups
+
+#### Clinical Enum Field Groups
 
 ### Mutation Groups
 
 ### Expression Groups
+
+## Cartesian Product Groups
+
+The Comparison Groups above classify samples into groups. However, a user may be interested in classifying samples into more than one group at a time. For example, a user may be interested in grouping samples with both the existence of a certain mutation, and its TMB value. This is possible by classifying samples into the [Cartesian product](https://en.wikipedia.org/wiki/Cartesian_product) of a set of rules.
+
+##### Ex: Cartesian product rules (2D)
+```
+TP53 any X tmb [0, 2, 4, 8, 16, 32]
+```
+This rule leads to 10 distinct groups.
+
+|                    | TMB G0            | TMB G1            | TMB G2            | TMB G3            | TMB G4            |
+| ------------------ | ----------------  | ----------------  | ----------------  | ----------------  | ----------------  |
+|  TP53 w/  variant  | TP53 w/  x TMB G0 | TP53 w/  x TMB G1 | TP53 w/  x TMB G2 | TP53 w/  x TMB G3 | TP53 w/  x TMB G4 |
+|  TP53 w/o variant  | TP53 w/o x TMB G0 | TP53 w/o x TMB G1 | TP53 w/o x TMB G2 | TP53 w/o x TMB G3 | TP53 w/o x TMB G4 |
+
+##### Ex: Cartesian product rules (3D)
+```
+TP53 any X PTEN expression 2 groups X tmb [0, 2, 4, 8, 16, 32]
+```
+This rule leads to 20 distinct groups.
+
+|     | TMB G0 | TMB G1 | TMB G2 | TMB G3 | TMB G4 |
+| --- | ------ | ------ | ------ | ------ | ------ |
+|  TP53 w/  variant x PTEN G0 | TP53 w/  x PTEN G0 x TMB G0 | TP53 w/  x PTEN G0 x TMB G1 | TP53 w/  x PTEN G0 x TMB G2 | TP53 w/  x PTEN G0 x TMB G3 | TP53 w/  x PTEN G0 x TMB G4 |
+|  TP53 w/  variant x PTEN G1 | TP53 w/  x PTEN G1 x TMB G0 | TP53 w/  x PTEN G1 x TMB G1 | TP53 w/  x PTEN G1 x TMB G2 | TP53 w/  x PTEN G1 x TMB G3 | TP53 w/  x PTEN G1 x TMB G4 |
+|  TP53 w/o variant x PTEN G0 | TP53 w/o x PTEN G0 x TMB G0 | TP53 w/o x PTEN G0 x TMB G1 | TP53 w/o x PTEN G0 x TMB G2 | TP53 w/o x PTEN G0 x TMB G3 | TP53 w/o x PTEN G0 x TMB G4 |
+|  TP53 w/o variant x PTEN G1 | TP53 w/o x PTEN G1 x TMB G0 | TP53 w/o x PTEN G1 x TMB G1 | TP53 w/o x PTEN G1 x TMB G2 | TP53 w/o x PTEN G1 x TMB G3 | TP53 w/o x PTEN G1 x TMB G4 |
+
+### Limitations
+
+There are some limits on the number (and type) of groups in the Cartesian product. The general maximum number of single-dimension group allowed is four (4). The maximum number of Mutation Groups allowed is two (2). Within a single-dimension group, there are no limit on the number of intervals/subgroups.
+
+| Total # of Groups | # of Clinical Groups / Expression Groups | # of Mutation Groups | Valid? | Example |
+| ----------------- | ---------------------------------------- | -------------------- | ------ | ------- |
+| >4 | * | * | no | |
+| 4 | 4 | 0 | yes | `tmb [0, 4, 16, 64] X hed [5, 7, 9, 11] X TP53 expression 2 groups X PTEN expression 2 groups` |
+| 4 | 3 | 1 | yes | `tmb [0, 4, 16, 64] X hed [5, 7, 9, 11] X TP53 expression 2 groups X PTEN any` |
+| 4 | 2 | 2 | yes | `tmb [0, 4, 16, 64] X hed [5, 7, 9, 11] X TP53 any X PTEN expression 2 groups` |
+| 4 | 1 | 3 | no | |
+| 4 | 0 | 4 | no | |
+| 3 | 3 | 0 | yes | `tmb [0, 4, 16, 64] X hed [5, 7, 9, 11] X TP53 expression 2 groups` |
+| 3 | 2 | 1 | yes | `tmb [0, 4, 16, 64] X TP53 expression 2 groups X PTEN any` |
+| 3 | 1 | 2 | yes | `tmb [0, 4, 16, 64] X TP53 any X PTEN any` |
+| 3 | 0 | 3 | no | |
+| 2 | 2 | 0 | yes | ` X tmb [0, 4, 16, 64]` |
+| 2 | 1 | 1 | yes | `TP53 any X tmb [0, 4, 16, 64]` |
+| 2 | 0 | 2 | yes | `TP53 any X CDKN2A any` |
