@@ -42,7 +42,6 @@ tmb > 10
 tmb != 0
 tmb <= 50
 ```
-Try to write your own Clinical Numeric rules [here](https://regex101.com/r/IOFrSD/1).
 
 ##### Clinical Quartile
 
@@ -59,7 +58,6 @@ age Q3-Q4
 age q1-q2
 age q2-q4
 ```
-Try to write your own single quartile Clinical Quartile rules [here](https://regex101.com/r/2cqmkI/2) or quartile range Clinical Quartile rules [here](https://regex101.com/r/MJncUN/2).
 
 ##### Clinical Categorical
 
@@ -71,7 +69,6 @@ m_stage IN [M0]
 m_stage In [MX]
 m_stage in [M1A, M1B, M1C]
 ```
-Try to write your own Clinical Categorical rules [here](https://regex101.com/r/2yNXZq/1/).
 
 #### Mutation Rules
 
@@ -109,7 +106,6 @@ PTEN exclude [frame shift, in frame]
 BRAF Exclude [splice site]
 TAP1 EXCLUDE [nonsense, missense, splice site]
 ```
-Try to write your own Variant Set Mutation rules [here](https://regex101.com/r/0scg4F/2).
 
 ##### Any Variant
 
@@ -124,7 +120,6 @@ PTEN any variants
 BRAF Any Variants
 TAP1 ANY VARIANTS
 ```
-Try to write your own Variant Set Mutation rules [here](https://regex101.com/r/2yNXZq/1).
 
 #### Expression Rules
 
@@ -141,7 +136,6 @@ KRAS Q3-Q4
 CDKN2A q1-q3
 BRCA2 q2-q4
 ```
-Try to write your own single quartile Expression rules [here](https://regex101.com/r/4vkCsd/3) and quartile range Expression rules [here](https://regex101.com/r/yNgNo9/3).
 
 ### Operators
 
@@ -158,5 +152,7 @@ Try to write your own single quartile Expression rules [here](https://regex101.c
 The AFL uses the HUGO symbol for human gene symbols. The rules pertinent to AFL users are listed below.
  - Human gene symbols are designated by **upper-case Latin letters** or by a combination of **upper-case letters** and **Arabic numerals**.
  - The initial character of the symbol should always be a letter. Subsequent characters may be other letters, or if necessary, Arabic numerals.
+
+Though the HUGO symbol standard calls for upper-case letters, the IOExplorer system will recognize lower-case HUGO symbols.
 
 For a more complete reference, see the Gene Symbol guidelines at [genenames.org](https://www.genenames.org/about/guidelines/#!/#tocAnchor-1-7)

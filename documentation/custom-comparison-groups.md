@@ -57,3 +57,15 @@ This rule leads to 10 groups.
 | ------------------ | ------ | ------ | ------ | ------ | ------ |
 |  TP53 w/ variant   |        |        |        |        |        |
 |  TP53 w/o variant  |        |        |        |        |        |
+
+## Group Types
+
+### Clinical Numeric Field Groups
+
+### Clinical String Field Groups
+
+### Clinical Enum Field Groups
+
+### Mutation Groups
+
+### Expression Groups
