@@ -144,12 +144,12 @@ There are some limits on the number (and type) of groups in the Cartesian produc
 | Total # of Groups | # of Clinical / Expression Groups | # of Mutation Groups | Valid? | Example |
 | ----------------- | ---------------------------------------- | -------------------- | ------ | ------- |
 | >4 | * | * | no | |
-| 4 | 4 | 0 | yes | `tmb [0, 4, 16, 64] X hed [5, 7, 9, 11] X TP53 expression 2 groups X PTEN expression 2 groups` |
-| 4 | 3 | 1 | yes | `tmb [0, 4, 16, 64] X hed [5, 7, 9, 11] X TP53 expression 2 groups X PTEN any` |
-| 4 | 2 | 2 | yes | `tmb [0, 4, 16, 64] X hed [5, 7, 9, 11] X TP53 any X PTEN expression 2 groups` |
+| 4 | 4 | 0 | yes | `tmb [0, 4, 16, 64] X mean hed [5, 7, 9, 11] X TP53 expression 2 groups X PTEN expression 2 groups` |
+| 4 | 3 | 1 | yes | `tmb [0, 4, 16, 64] X mean hed [5, 7, 9, 11] X TP53 expression 2 groups X PTEN any` |
+| 4 | 2 | 2 | yes | `tmb [0, 4, 16, 64] X mean hed [5, 7, 9, 11] X TP53 any X PTEN expression 2 groups` |
 | 4 | 1 | 3 | no | |
 | 4 | 0 | 4 | no | |
-| 3 | 3 | 0 | yes | `tmb [0, 4, 16, 64] X hed [5, 7, 9, 11] X TP53 expression 2 groups` |
+| 3 | 3 | 0 | yes | `tmb [0, 4, 16, 64] X mean hed [5, 7, 9, 11] X TP53 expression 2 groups` |
 | 3 | 2 | 1 | yes | `tmb [0, 4, 16, 64] X TP53 expression 2 groups X PTEN any` |
 | 3 | 1 | 2 | yes | `tmb [0, 4, 16, 64] X TP53 any X PTEN any` |
 | 3 | 0 | 3 | no | |
