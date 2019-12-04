@@ -4,5 +4,5 @@ structure:
   readme: README.md
   summary: SUMMARY.md
 
-redirects:
-  clinical-fields: internals/clinical-fields.md
+# redirects:
+#   clinical-fields: internals/clinical-fields.md
