@@ -2,7 +2,7 @@
 
 The Comparison Groups feature allows users to classify samples into groups with accuracy and precision for comparison in the Survival module. Using a specified syntax, outlined below, users can classify samples based on the existence and/or absence of mutations, expression levels, and clinical variable values.
 
-#### Jumpstart Examples
+### Jumpstart Examples
 
 Consider the following examples for an idea of how to use the Comparison Groups syntax to classify samples into custom groups for endpoint comparison.
 
@@ -158,3 +158,9 @@ There are some limits on the number (and type) of groups in the Cartesian produc
 | 2 | 2 | 0 | yes | ` X tmb [0, 4, 16, 64]` |
 | 2 | 1 | 1 | yes | `TP53 any X tmb [0, 4, 16, 64]` |
 | 2 | 0 | 2 | yes | `TP53 any X CDKN2A any` |
+
+## Additional Notes
+
+### Clinical Variable Aliases
+
+To refer to a clinical variable in the to create custom Comparison Groups, use any of the valid aliases for the clinical variable. These valid aliases can be found on the [Clincal Fields page](../intervals/clinical-fields.md).

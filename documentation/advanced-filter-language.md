@@ -4,7 +4,7 @@ The AFL is a language intended to represent logical expressions for the selectio
 
 The AFL exhibits [functional completeness](https://en.wikipedia.org/wiki/Functional_completeness), meaning the available operators can be combined to produce all possible filter rule [truth tables](https://en.wikipedia.org/wiki/Truth_table).
 
-#### Jumpstart Examples
+### Jumpstart Examples
 
 Consider the following examples for an idea of how to use the AFL to specify a selection of samples.
 
@@ -147,7 +147,11 @@ BRCA2 q2-q4
 
 #### Not Operator
 
-## Implementation
+## Additional Notes
+
+### Clinical Variable Aliases
+
+To refer to a clinical variable in the AFL, use any of the valid aliases for the clinical variable. These valid aliases can be found on the [Clincal Fields page](../intervals/clinical-fields.md).
 
 ### Gene Symbols
 
