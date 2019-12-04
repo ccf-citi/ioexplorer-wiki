@@ -163,4 +163,4 @@ There are some limits on the number (and type) of groups in the Cartesian produc
 
 ### Clinical Variable Aliases
 
-To refer to a clinical variable in the to create custom Comparison Groups, use any of the valid aliases for the clinical variable. These valid aliases can be found on the [Clinical Fields page](../clinical-fields).
+To refer to a clinical variable in the to create custom Comparison Groups, use any of the valid aliases for the clinical variable. These valid aliases can be found on the [Clinical Fields page](../internals/clinical-fields.md).
