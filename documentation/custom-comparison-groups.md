@@ -117,7 +117,7 @@ This rule leads to 20 distinct groups.
 
 There are some limits on the number (and type) of groups in the Cartesian product. The general maximum number of single-dimension group allowed is four (4). The maximum number of Mutation Groups allowed is two (2). Within a single-dimension group, there are no limit on the number of intervals/subgroups.
 
-| Total # of Groups | # of Clinical Groups / Expression Groups | # of Mutation Groups | Valid? | Example |
+| Total # of Groups | # of Clinical / Expression Groups | # of Mutation Groups | Valid? | Example |
 | ----------------- | ---------------------------------------- | -------------------- | ------ | ------- |
 | >4 | * | * | no | |
 | 4 | 4 | 0 | yes | `tmb [0, 4, 16, 64] X hed [5, 7, 9, 11] X TP53 expression 2 groups X PTEN expression 2 groups` |
