@@ -79,7 +79,31 @@ Samples with a TMB value between 0 and 2 will be classified in G1; those with a 
 
 #### Clinical String Field Groups
 
+Clinical String Field groups are those based on a string-type clinical variable. Using a custom comparison group for a string-type clinical field gives the user the ability to drop certain values and combine others into named categories.
+
+##### Ex: Cancer Type with 4 named categories
+```
+cancer type {(solid tumor, [Breast Cancer, Prostate Cancer]), (liquid tumor, [Leukemia])}
+```
+Samples with the cancer type `Breast Cancer` or `Prostate Cancer` will both be assigned to the `solid tumor` category. Samples with the cancer type `Leukemia` will be assigned to the `liquid tumor` category. Samples with any other cancer type value will not be assigned to a group and therefore will not be displayed on the plot.
+
 #### Clinical Enum Field Groups
+
+Clinical Enum Field groups are those based on a enum-type clinical variable. Using a custom comparison group for a enum-type clinical field gives the user the ability to drop certain values and combine others into named categories.
+
+##### Ex: Metastatic Stage with 2 named categories
+```
+m_stage {(m0, [M0]), (m1, [M1, M1A, M1B, M1C])}
+```
+Samples with the stage `M0` will be assigned to the `m0` category. Samples with any of the stages `M1`, `M1A`, `M1B`, or `M1C` will be assigned to the `m1` category. Samples with any other stage value will not be assigned to a group and therefore will not be displayed on the plot.
+
+The Clinical Enum Field Groups are essentially Clinical Enum Field Groups with one exception. If no named categories are given for an enum-type clinical variable, the system will include all of the possible types of the enum and create a named category for each one.
+
+##### Ex: Metastatic Stage with no named categories
+```
+m_stage {()}
+```
+Samples with the stage `M0` will be assigned to the `M0` category; samples with the stage `M1` will be assigned to the `M1` category, etc. No samples are omitted.
 
 ### Mutation Groups
 
