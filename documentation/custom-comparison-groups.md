@@ -1,5 +1,3 @@
-## General
-
 The Comparison Groups feature allows users to classify samples into groups with accuracy and precision for comparison in the Survival module. Using a specified syntax, outlined below, users can classify samples based on the existence and/or absence of mutations, expression levels, and clinical variable values.
 
 #### Jumpstart Examples
