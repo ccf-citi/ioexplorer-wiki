@@ -1,3 +1,5 @@
+This file was auto-generated on 2019-12-13 17:13:01.883609
+
 # Subject Fields
 ## Age
 ### The age of the subject.
@@ -20,11 +22,6 @@ ipop three-type response
 two-type response
 ipop two-type response
 ```
-## M Stage
-```
-m stage
-metastasis stage
-```
 ## RECIST
 ```
 recist
@@ -33,6 +30,12 @@ recist
 ```
 raw investigator response
 raw response
+```
+## Stage
+```
+stage
+m stage
+metastasis stage
 ```
 # Sample Fields
 ## Aging Signature
@@ -184,6 +187,12 @@ type of sample
 ## Somatic Status
 ```
 somatic status
+```
+## Treatment Status
+### The treatment status at the time the sample was taken.
+```
+treatment status
+pre on
 ```
 ## Tumor Mutation Burden
 ```
