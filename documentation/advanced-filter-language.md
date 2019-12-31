@@ -141,11 +141,99 @@ BRCA2 q2-q4
 
 ### Operators
 
-#### And Operator
+The AFL includes the use of logical operators to combine and modulate selection expressions. The `And` and `Or` operators bridge two expressions together; though, they act in different ways. The `Not` operator modules the expression to its right.
 
-#### Or Operator
+#### `And` Operator
 
-#### Not Operator
+The `And` operator is used to take the intersection of two expressions. More specifically, the samples that are selected in the expressions on both sides of the `And` operator are included in the result of the full expression.
+
+##### Ex: Use of `And` Operator
+```
+TP53 any AND CDKN2A any
+```
+In the expression above, there are two subexpressions; one is on the left side of `And` (`TP53 any`) and the other is on the right side (`CDKN2A any`). Each subexpression results in a set of samples. The `And` operator takes the intersection of these two sets. The result of the full expression is a set of samples that have some genetic variant in both the TP53 gene and the CDKN2A.
+
+| sample_id | TP53 | CDKN2A | Result |
+| --------- | ---- | ------ | ------ |
+| 0         | yes  | yes    | yes    |
+| 1         | yes  | no     | no     |
+| 2         | no   | yes    | no     |
+| 3         | no   | no     | no     |
+
+#### `Or` Operator
+
+The `Or` operator is used to take the union of two expressions. More specifically, the samples that are selected in the expressions on either sides of the `Or` operator are included in the result of the full expression.
+
+##### Ex: Use of `Or` Operator
+```
+TP53 any OR CDKN2A any
+```
+In the expression above, there are two subexpressions; one is on the left side of `Or` (`TP53 any`) and the other is on the right side (`CDKN2A any`). Each subexpression results in a set of samples. The `Or` operator takes the union of these two sets. The result of the full expression is a set of samples that have some genetic variant in either the TP53 gene and the CDKN2A.
+
+| sample_id | TP53 | CDKN2A | Result |
+| --------- | ---- | ------ | ------ |
+| 0         | yes  | yes    | yes    |
+| 1         | yes  | no     | yes    |
+| 2         | no   | yes    | yes    |
+| 3         | no   | no     | no     |
+
+#### `Not` Operator
+
+The Not operator is used to take the complement of the subexpression. More specifically, the samples that are not included in the subexpression on the right of the `Not` operator are included in the result of the full expression.
+
+##### Ex: Use of `Not` Operator
+```
+NOT age Q4
+```
+In the expression above, there is one subexpression and one `Not` operator. The subexpression is evaluated and the `Not` operator selections all of the samples that were not included in its subexpression. The result of the full expression is a set of samples that are in the first three quartiles of age (or those not in the fourth quartile).
+
+| sample_id | age | Result |
+| --------- | --- | ------ |
+| 0         | Q1  | yes    |
+| 1         | Q2  | yes    |
+| 2         | Q3  | yes    |
+| 3         | Q4  | no     |
+
+#### Parenthesis
+
+As logical expressions grow and become more complex, there are rules that define the order of evaluation. These rules exist so that there is only one way to evaluate a logical expression.
+
+The accepted order of operations is `Not -> And -> Or`. This means that all `Not` operators are evaluated first, then `And` operators, and finally `Or` operators.
+
+##### Ex: Default Order of Evaluation
+```
+TP53 any AND tmb Q1 OR NOT age Q4
+((TP53 any AND tmb Q1) OR (NOT age Q4))
+```
+(The two expressions above are equivalent. The second expression uses parenthesis to denote the accepted order of evaluation)
+
+| sample_id | TP53 | tmb    | age    | Result |
+| --------- | ---- | ------ | ------ | ------ |
+| 0         | yes  | Q1     | Q1     | yes    |
+| 1         | yes  | Q1     | Q4     | yes    |
+| 2         | yes  | Q2     | Q1     | yes    |
+| 3         | yes  | Q2     | Q4     | no     |
+| 4         | no   | Q1     | Q1     | yes    |
+| 5         | no   | Q1     | Q4     | no     |
+| 6         | no   | Q2     | Q1     | yes    |
+| 7         | no   | Q2     | Q4     | no     |
+
+Use parenthesis to create a custom order of evaluation. Nested (internal) parenthesis are evaluated first; move from inside to outside and left to right.
+
+##### Ex: Custom Order of Evaluation
+```
+TP53 any AND (tmb Q1 OR NOT age Q4)
+```
+| sample_id | TP53 | tmb    | age    | Result |
+| --------- | ---- | ------ | ------ | ------ |
+| 0         | yes  | Q1     | Q1     | yes    |
+| 1         | yes  | Q1     | Q4     | yes    |
+| 2         | yes  | Q2     | Q1     | yes    |
+| 3         | yes  | Q2     | Q4     | no     |
+| 4         | no   | Q1     | Q1     | no     |
+| 5         | no   | Q1     | Q4     | no     |
+| 6         | no   | Q2     | Q1     | no     |
+| 7         | no   | Q2     | Q4     | no     |
 
 ## Additional Notes
 
