@@ -205,7 +205,7 @@ The accepted order of operations is `Not -> And -> Or`. This means that all `Not
 TP53 any AND tmb Q1 OR NOT age Q4
 ((TP53 any AND tmb Q1) OR (NOT age Q4))
 ```
-(The two expressions above are equivalent. The second expression uses parenthesis to denote the accepted order of evaluation)
+(The two expressions above are equivalent. The second expression uses parenthesis to denote the accepted order of evaluation.)
 
 | sample_id | TP53 | tmb    | age    | Result |
 | --------- | ---- | ------ | ------ | ------ |
