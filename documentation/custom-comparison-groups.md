@@ -183,6 +183,38 @@ Samples with a `Frame_Shift_Ins`, `Frame_Shift_Del`, `In_Frame_Ins`, or `In_Fram
 
 ### Expression Groups
 
+Expression Groups are those based on mRNA expression. Using a custom comparison group for mRNA expression gives the user the ability to stratify patients based on the activity of a specific gene.
+
+Samples without mRNA expression data are omitted from any groups.
+
+The system will assign samples into groups based on the distribution of mRNA expression levels for the given gene.
+
+#### Quartile Groups
+
+By default, the system will divide samples into four groups or quartiles.
+
+##### Ex: TP53 Expression
+```
+TP53 expression
+```
+Samples are assigned to groups `G0` through `G3` based on the mRNA expression levels for the TP53 gene.
+
+#### Non-Quartile Groups
+
+The user can create non-quartile groups as well. Valid group numbers are between two (2) and eight (8).
+
+##### Ex: TP53 Expression With 2 Groups
+```
+TP53 expression with 2 groups
+```
+Samples are assigned to groups `G0` or `G1` based on the mRNA expression levels for the TP53 gene.
+
+##### Ex: TP53 Expression With 6 Groups
+```
+TP53 expression with 6 groups
+```
+Samples are assigned to groups `G0` or `G5` based on the mRNA expression levels for the TP53 gene.
+
 ## Cartesian Product Groups
 
 The Comparison Groups above classify samples into groups. However, a user may be interested in classifying samples into more than one group at a time. For example, a user may be interested in grouping samples with both the existence of a certain mutation, and its TMB value. This is possible by classifying samples into the [Cartesian product](https://en.wikipedia.org/wiki/Cartesian_product) of a set of rules.
