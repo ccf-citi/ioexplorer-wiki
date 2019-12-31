@@ -109,6 +109,78 @@ Samples with the stage `M0` will be assigned to the `M0` category; samples with 
 
 ### Mutation Groups
 
+Mutation groups are those based on genetic variants. Using a custom comparison group for a genetic variant gives the user the ability to stratify patients based on the existence of a variant in a specific gene or within a set of genes. The user also has the ability to stratify patients based on the type of variant in a single gene or within a set of genes.
+
+Samples without gene variant data are omitted from any groups.
+
+Below is the list of accepted variants along with the valid aliases for each variant. All aliases are case-insensitive.
+
+| Variant Type | Valid Aliases |
+| --- | --- |
+| Frame Shift Ins     | `frameshiftins` `frame shift ins` `frame_shift_ins` |
+| Frame Shift Del     | `frameshiftdel` `frame shift del` `frame_shift_del` |
+| In Frame Ins        | `inframeins` `in frame ins` `in_frame_ins` |
+| In Frame Del        | `inframedel` `in frame del` `in_frame_del` |
+| Missense Mutation   | `missense` `missense mutation` `missense_mutation` |
+| Nonsense Mutation   | `nonsense` `nonsense mutation` `nonsense_mutation` |
+| Splice Site         | `splicesite` `splice site` `splice_site` |
+
+There are three ways to define a Mutation group. There are two keyword options and one custom option.
+
+#### `Any` Keyword
+
+Use the `any` keyword to stratify based on the existence of a variant in a specific gene or in a set of genes.
+
+There are two (2) result groups when using the `any` keyword. The first is the `Any Variant` group and the second is the `None` group. If the sample has a variant of an accepted type, it is assigned to the `Any Variant` group; otherwise, it is assigned to the `None` group.
+
+##### Ex: TP53 Any Variant
+```
+TP53 any
+```
+Samples with a variant (any type) in the TP53 gene will be assigned to the `TP53 Any Variant` group; samples without a variant in the TP53 gene will be assigned to the `None` group.
+
+##### Ex: Gene Set Any Variant
+```
+(TP53, CDKN2A) any
+```
+Samples with a variant (any type) in any of the genes in the gene set (TP53, CDKN2A) will be assigned to the `TP53 CDKN2A Any Variant` group; samples without a variant in any of the genes in the gene set will be assigned to the `None` group.
+
+#### `All` Keyword
+
+Use the `all` keyword to stratify based on the a pre-defined mapping of variants in a specific gene or in a set of genes.
+
+There are six (6) possible result groups when using the `all` keyword. Refer to the table below to see how the variants map to each group.
+
+| Group | Included Variants |
+| --- | --- |
+| Frame Shift | `Frame_Shift_Ins` `Frame_Shift_Del` |
+| In Frame | `In_Frame_Ins` `In_Frame_Del` |
+| Missense | `Missense_Mutation` |
+| Nonsense | `Nonsense_Mutation` |
+| Splice Site | `Splice_Site` |
+
+##### Ex: TP53 All Variants
+```
+TP53 all
+```
+Samples with a `Frame_Shift_Ins` or `Frame_Shift_Del` variant in the TP53 gene are assigned to the `Frame Shift` group; Samples with a `In_Frame_Ins` or `In_Frame_Del` variant in the TP53 gene are assigned to the `In Frame` group; Samples with a `Missense_Mutation` variant in the TP53 gene are assigned to the `Missense` group. Samples with a `Nonsense_Mutation` variant in the TP53 gene are assigned to the `Nonsense` group. Samples with a `Splice_Site` variant in the TP53 gene are assigned to the `Splice Site` group. Samples without a variant in the TP53 gene are assigned to the `None` group.
+
+##### Ex: Gene Set All Variants
+```
+(TP53, CDKN2A) all
+```
+Samples with a `Frame_Shift_Ins` or `Frame_Shift_Del` variant in the gene set are assigned to the `Frame Shift` group; Samples with a `In_Frame_Ins` or `In_Frame_Del` variant in the gene set are assigned to the `In Frame` group; Samples with a `Missense_Mutation` variant in the gene set are assigned to the `Missense` group. Samples with a `Nonsense_Mutation` variant in the gene set are assigned to the `Nonsense` group. Samples with a `Splice_Site` variant in the gene set are assigned to the `Splice Site` group. Samples without a variant in the gene set are assigned to the `None` group.
+
+#### Custom Mutation Group
+
+For fine-grained control over the number and contents of each group, a user can define each one specifically.
+
+##### Ex: TP53 Custom Variant Groups
+```
+TP53 {(indel, [frame shift, in frame]), (point, [missense, nonsense])}
+```
+Samples with a `Frame_Shift_Ins`, `Frame_Shift_Del`, `In_Frame_Ins`, or `In_Frame_Del` variant are assigned to the `indel` group. Samples with a `Missense_Mutation` or `Nonsense_Mutation` are assigned to the `point` group. Samples with other types of variants or no variants at all are assigned to the `None` group.
+
 ### Expression Groups
 
 ## Cartesian Product Groups
