@@ -5,7 +5,7 @@
 * [Selection Dogma](documentation/selection-dogma.md)
 * [Subject to Sample Mapping](documentation/subject-to-sample-mapping.md)
 * [Advanced Filter Language](documentation/advanced-filter-language.md)
-* [Custom Comparison Groops](documentation/custom-comparison-groups.md)
+* [Custom Comparison Groups](documentation/custom-comparison-groups.md)
 
 ## Internals
 
