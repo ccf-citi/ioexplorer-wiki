@@ -10,3 +10,4 @@
 ## Internals
 
 * [Clinical Fields](internals/clinical-fields.md)
+* [Enumerated Types](internals/enumerated-types.md)
