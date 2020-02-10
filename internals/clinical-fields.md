@@ -1,4 +1,4 @@
-This file was auto-generated on 2020-01-09 13:38:04.569832
+This file was auto-generated on 2020-02-10 12:06:38.068079
 
 # Subject Fields
 ## Age
@@ -118,6 +118,10 @@ fraction genome cna
 ```
 gene panel
 ```
+## HLA A Allele
+```
+hla a allele
+```
 ## HLA A Evolutionary Diversity
 ```
 hla a evolutionary diversity
@@ -128,6 +132,10 @@ hed a
 hla a zygosity
 hla a
 ```
+## HLA B Allele
+```
+hla b allele
+```
 ## HLA B Evolutionary Diversity
 ```
 hla b evolutionary diversity
@@ -137,6 +145,10 @@ hed b
 ```
 hla b zygosity
 hla b
+```
+## HLA C Allele
+```
+hla c allele
 ```
 ## HLA C Evolutionary Diversity
 ```
