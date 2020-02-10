@@ -1,4 +1,4 @@
-This file was generated on 2020-02-10 16:32:02.708256
+This file was generated on 2020-02-10 16:44:28.478745
 
 # Subject Fields
 
@@ -7,13 +7,13 @@ This file was generated on 2020-02-10 16:32:02.708256
 ### Age
 The age of the subject in years.
 ```
-age
+#### age
 ```
 
 ### Gender
 The gender of the subject.
 ```
-sex
+#### sex
 gender
 ```
 
@@ -22,7 +22,7 @@ gender
 ### Stage
 The tumor stage of the subject.
 ```
-stage
+#### stage
 m stage
 metastasis stage
 ```
@@ -30,27 +30,27 @@ metastasis stage
 ### RECIST
 The RECIST classification of the subject.
 ```
-recist
+#### recist
 ```
 
 ### Raw Investigator Response
 The response of the subject encoded by the investigator.
 ```
-raw investigator response
+#### raw investigator response
 raw response
 ```
 
 ### IPOP Response - Two Type
 The response of the subject encoded as a two-type variable.
 ```
-two-type response
+#### two-type response
 ipop two-type response
 ```
 
 ### IPOP Response - Three Type
 The response of the subject encoded as a three-type variable.
 ```
-three-type response
+#### three-type response
 ipop three-type response
 ```
 
