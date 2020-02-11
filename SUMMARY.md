@@ -11,3 +11,4 @@
 
 * [Clinical Fields](internals/clinical-fields.md)
 * [Enumerated Types](internals/enumerated-types.md)
+* [Gene Sets](internals/genesets.md)
