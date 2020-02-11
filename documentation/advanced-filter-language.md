@@ -20,7 +20,7 @@ tmb > 5 or TP53 any
 
 ###### Ex: Select samples with TAP1 expression in the bottom quartile or mean HLA evolutionary divergence in the bottom half.
 ```
-TAP1 Q1 or hla_mean_evolutionary_diversity Q1-Q2
+TAP1 Q1 or hla_mean_evolutionary_divergence Q1-Q2
 ```
 Read ahead for more details on Filter Rules and Operators.
 

@@ -1,4 +1,4 @@
-This file was generated on 2020-02-11 10:54:19.645270
+This file was generated on 2020-02-11 14:51:52.990740
 
 # Subject Fields
 
@@ -254,81 +254,60 @@ The UV signature (Sanger signature 7) of the sample.
 uv signature
 ```
 
-### Davoli SCNA
-```
-davoli scna
-```
-
-### Fraction Genome CNA
-```
-fraction genome cna
-```
-
-### Fraction Genome Altered
-```
-fraction genome altered
-```
-
-### HLA A Allele
-```
-hla a allele
-```
-
-### HLA B Allele
-```
-hla b allele
-```
-
-### HLA C Allele
-```
-hla c allele
-```
-
-### HLA A Zygosity
+### HLA-A Zygosity
+The zygosity of HLA-A for the subject.
 ```
 hla a zygosity
 hla a
 ```
 
-### HLA B Zygosity
+### HLA-B Zygosity
+The zygosity of HLA-B for the subject.
 ```
 hla b zygosity
 hla b
 ```
 
-### HLA C Zygosity
+### HLA-C Zygosity
+The zygosity of HLA-C for the subject.
 ```
 hla c zygosity
 hla c
 ```
 
 ### HLA Zygosity
+The composite zygosity of HLA at locus A, B and C for the subject.
 ```
 hla zygosity
 hla
 ```
 
-### HLA A Evolutionary Diversity
+### HLA-A Evolutionary Divergence
+The evolutionary divergence of the HLA allele pair at locus A for the sample. This value is calculated by measuring the Grantham distance between the peptide-binding domains of the subject's two HLA-A alleles.
 ```
-hla a evolutionary diversity
+hla a evolutionary divergence
 hed a
 ```
 
-### HLA B Evolutionary Diversity
+### HLA-B Evolutionary Divergence
+The evolutionary divergence of the HLA allele pair at locus B for the sample. This value is calculated by measuring the Grantham distance between the peptide-binding domains of the subject's two HLA-B alleles.
 ```
-hla b evolutionary diversity
+hla b evolutionary divergence
 hed b
 ```
 
-### HLA C Evolutionary Diversity
+### HLA-C Evolutionary Divergence
+The evolutionary divergence of the HLA allele pair at locus C for the sample. This value is calculated by measuring the Grantham distance between the peptide-binding domains of the subject's two HLA-C alleles.
 ```
-hla c evolutionary diversity
+hla c evolutionary divergence
 hed c
 ```
 
-### HLA Mean Evolutionary Diversity
+### Mean HLA Evolutionary Divergence
+The mean of the evolutionary divergence of the HLA allele pair at locus A, B, and C for the sample. This value is calculated by measuring the Grantham distance between the peptide-binding domains of the subject's two alleles at locus A, B, and C, and taking the mean.
 ```
-hla mean evolutionary diversity
+hla mean evolutionary divergence
+mean hla evolutionary divergence
 hed mean
 mean hed
 ```
@@ -500,10 +479,10 @@ apm2 ssgsea
 antigen presenting machinery 2 ssgsea
 ```
 
-### Angiogenesis (ssGSEA - Bindea)
+### Angiogenesis (ssGSEA - Hakimi)
 The mRNA-based ssGSEA score for the angiogenesis signature of the sample. The score measures the rank of genes in the angiogenesis signature relative to all other genes.
 ```
-angiogenesis bindea
+angiogenesis hakimi
 angiogenesis ssgsea
 ```
 
