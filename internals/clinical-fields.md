@@ -1,4 +1,4 @@
-This file was generated on 2020-02-10 16:48:21.756660
+This file was generated on 2020-02-11 09:35:26.971290
 
 # Subject Fields
 
@@ -333,135 +333,135 @@ hed mean
 mean hed
 ```
 
-## Cibersort
+## CIBERSORT
 
-### Naive B Cells (LM22)
+### Naive B Cells (CIBERSORT - LM22)
 The estimated absolute score of naive B cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
 naive b cells lm22
 ```
 
-### Memory B Cells (LM22)
+### Memory B Cells (CIBERSORT - LM22)
 The estimated absolute score of memory B cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
 memory b cells lm22
 ```
 
-### Plasma Cells (LM22)
+### Plasma Cells (CIBERSORT - LM22)
 The estimated absolute score of plasma cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
 plasma cells lm22
 ```
 
-### CD8+ T Cells (LM22)
+### CD8+ T Cells (CIBERSORT - LM22)
 The estimated absolute score of CD8+ T cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
 cd8 t cells lm22
 ```
 
-### Naive CD4+ T Cells (LM22)
+### Naive CD4+ T Cells (CIBERSORT - LM22)
 The estimated absolute score of naive CD4+ T cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
 naive cd4 t cells lm22
 ```
 
-### Resting CD4+ T Cells (LM22)
+### Resting CD4+ T Cells (CIBERSORT - LM22)
 The estimated absolute score of resting CD4+ T cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
 resting cd4 t cells lm22
 ```
 
-### Activated CD4+ T Cells (LM22)
+### Activated CD4+ T Cells (CIBERSORT - LM22)
 The estimated absolute score of activated CD4+ T cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
 activated cd4 t cells lm22
 ```
 
-### Follicular Helper T Cells (LM22)
+### Follicular Helper T Cells (CIBERSORT - LM22)
 The estimated absolute score of follicular helper T cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
 follicular helper t cells lm22
 ```
 
-### Regulator T Cells (LM22)
+### Regulator T Cells (CIBERSORT - LM22)
 The estimated absolute score of regulator T cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
 regulator t cells lm22
 ```
 
-### Gamma Delta T Cells (LM22)
+### Gamma Delta T Cells (CIBERSORT - LM22)
 The estimated absolute score of gamma delta T cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
 gamme delta t cells lm22
 ```
 
-### Resting NK Cells (LM22)
+### Resting NK Cells (CIBERSORT - LM22)
 The estimated absolute score of resting NK cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
 resting nk cells lm22
 ```
 
-### Activated NK Cells (LM22)
+### Activated NK Cells (CIBERSORT - LM22)
 The estimated absolute score of activated NK cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
 activated nk cells lm22
 ```
 
-### Monocytes (LM22)
+### Monocytes (CIBERSORT - LM22)
 The estimated absolute score of monocytes as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
 monocytes lm22
 ```
 
-### Macrophages M0 (LM22)
+### Macrophages M0 (CIBERSORT - LM22)
 The estimated absolute score of M0 macrophages as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
 macrophages m0 lm22
 ```
 
-### Macrophages M1 (LM22)
+### Macrophages M1 (CIBERSORT - LM22)
 The estimated absolute score of M1 macrophages as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
 macrophages m1 lm22
 ```
 
-### Macrophages M2 (LM22)
+### Macrophages M2 (CIBERSORT - LM22)
 The estimated absolute score of M2 macrophages as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
 macrophages m2 lm22
 ```
 
-### Resting Dendritic Cells (LM22)
+### Resting Dendritic Cells (CIBERSORT - LM22)
 The estimated absolute score of resting dendritic cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
 resting dendritic cells lm22
 ```
 
-### Activated Dendritic Cells (LM22)
+### Activated Dendritic Cells (CIBERSORT - LM22)
 The estimated absolute score of activated dendritic cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
 activated dendritic cells lm22
 ```
 
-### Resting Mast Cells (LM22)
+### Resting Mast Cells (CIBERSORT - LM22)
 The estimated absolute score of resting mast cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
 resting mast cells lm22
 ```
 
-### Activated Mast Cells (LM22)
+### Activated Mast Cells (CIBERSORT - LM22)
 The estimated absolute score of activated mast cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
 activated mast cells lm22
 ```
 
-### Eosinophils (LM22)
+### Eosinophils (CIBERSORT - LM22)
 The estimated absolute score of eosinophils as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
 eosinophils lm22
 ```
 
-### Neutrophils (LM22)
+### Neutrophils (CIBERSORT - LM22)
 The estimated absolute score of neutrophils as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
 neutrophils lm22
