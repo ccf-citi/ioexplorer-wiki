@@ -1,4 +1,4 @@
-This file was generated on 2020-02-11 09:35:26.971290
+This file was generated on 2020-02-11 10:54:19.645270
 
 # Subject Fields
 
@@ -338,12 +338,14 @@ mean hed
 ### Naive B Cells (CIBERSORT - LM22)
 The estimated absolute score of naive B cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
+b cells naive lm22
 naive b cells lm22
 ```
 
 ### Memory B Cells (CIBERSORT - LM22)
 The estimated absolute score of memory B cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
+b cells memory lm22
 memory b cells lm22
 ```
 
@@ -356,54 +358,63 @@ plasma cells lm22
 ### CD8+ T Cells (CIBERSORT - LM22)
 The estimated absolute score of CD8+ T cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
+t cells cd8 lm22
 cd8 t cells lm22
 ```
 
 ### Naive CD4+ T Cells (CIBERSORT - LM22)
 The estimated absolute score of naive CD4+ T cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
+t cells cd4 naive lm22
 naive cd4 t cells lm22
 ```
 
 ### Resting CD4+ T Cells (CIBERSORT - LM22)
 The estimated absolute score of resting CD4+ T cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
+t cells cd4 resting lm22
 resting cd4 t cells lm22
 ```
 
 ### Activated CD4+ T Cells (CIBERSORT - LM22)
 The estimated absolute score of activated CD4+ T cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
+t cells cd4 activated lm22
 activated cd4 t cells lm22
 ```
 
 ### Follicular Helper T Cells (CIBERSORT - LM22)
 The estimated absolute score of follicular helper T cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
+t cells follicular helper lm22
 follicular helper t cells lm22
 ```
 
 ### Regulator T Cells (CIBERSORT - LM22)
 The estimated absolute score of regulator T cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
+t cells regulator lm22
 regulator t cells lm22
 ```
 
 ### Gamma Delta T Cells (CIBERSORT - LM22)
 The estimated absolute score of gamma delta T cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
-gamme delta t cells lm22
+t cells gamma delta lm22
+gamma delta t cells lm22
 ```
 
 ### Resting NK Cells (CIBERSORT - LM22)
 The estimated absolute score of resting NK cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
+nk cells resting lm22
 resting nk cells lm22
 ```
 
 ### Activated NK Cells (CIBERSORT - LM22)
 The estimated absolute score of activated NK cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
+nk cells activated lm22
 activated nk cells lm22
 ```
 
@@ -434,24 +445,28 @@ macrophages m2 lm22
 ### Resting Dendritic Cells (CIBERSORT - LM22)
 The estimated absolute score of resting dendritic cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
+dendritic cells resting lm22
 resting dendritic cells lm22
 ```
 
 ### Activated Dendritic Cells (CIBERSORT - LM22)
 The estimated absolute score of activated dendritic cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
+dendritic cells activated lm22
 activated dendritic cells lm22
 ```
 
 ### Resting Mast Cells (CIBERSORT - LM22)
 The estimated absolute score of resting mast cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
+mast cells resting lm22
 resting mast cells lm22
 ```
 
 ### Activated Mast Cells (CIBERSORT - LM22)
 The estimated absolute score of activated mast cells as a result of the CIBERSORT analysis with the leukocyte gene signature matrix (LM22).
 ```
+mast cells activated lm22
 activated mast cells lm22
 ```
 
@@ -472,6 +487,7 @@ neutrophils lm22
 ### Antigen Presenting Machinery Score 1 (ssGSEA - Hakimi)
 The mRNA-based ssGSEA score for the antigen presenting machinery signature 1 of the sample. The score measures the rank of genes in the antigen presenting machinery signature 1 relative to all other genes.
 ```
+apm1 hakimi
 apm1 ssgsea
 antigen presenting machinery 1 ssgsea
 ```
@@ -479,6 +495,7 @@ antigen presenting machinery 1 ssgsea
 ### Antigen Presenting Machinery Score 2 (ssGSEA - Hakimi)
 The mRNA-based ssGSEA score for the antigen presenting machinery signature 2 of the sample. The score measures the rank of genes in the antigen presenting machinery signature 2 relative to all other genes.
 ```
+apm2 hakimi
 apm2 ssgsea
 antigen presenting machinery 2 ssgsea
 ```
@@ -486,36 +503,42 @@ antigen presenting machinery 2 ssgsea
 ### Angiogenesis (ssGSEA - Bindea)
 The mRNA-based ssGSEA score for the angiogenesis signature of the sample. The score measures the rank of genes in the angiogenesis signature relative to all other genes.
 ```
+angiogenesis bindea
 angiogenesis ssgsea
 ```
 
 ### B Cells (ssGSEA - Bindea)
 The mRNA-based ssGSEA score for the B cell signature of the sample. The score measures the rank of genes in the B cell signature relative to all other genes.
 ```
+b cells bindea
 b cells ssgsea
 ```
 
 ### CD8+ T Cells (ssGSEA - Bindea)
 The mRNA-based ssGSEA score for the CD8+ T cell signature of the sample. The score measures the rank of genes in the CD8+ T cell signature relative to all other genes.
 ```
+cd8 t cells bindea
 cd8 t cells ssgsea
 ```
 
 ### CTLA-4 (ssGSEA - Hakimi)
 The mRNA-based ssGSEA score for the CTLA-4 signature of the sample. The score measures the rank of genes in the CTLA-4 signature relative to all other genes.
 ```
+ctla4 hakimi
 ctla4 ssgsea
 ```
 
 ### Cytotoxic Cells (ssGSEA - Bindea)
 The mRNA-based ssGSEA score for the cytotoxic cell signature of the sample. The score measures the rank of genes in the cytotoxic cell signature relative to all other genes.
 ```
+cytotoxic cells bindea
 cytotoxic cells ssgsea
 ```
 
 ### Dendritic Cells (ssGSEA - Bindea)
 The mRNA-based ssGSEA score for the dendritic cell signature of the sample. The score measures the rank of genes in the dendritic cell signature relative to all other genes.
 ```
+dc bindea
 dc ssgsea
 dendritic cells ssgsea
 ```
@@ -523,12 +546,14 @@ dendritic cells ssgsea
 ### Eosinophils (ssGSEA - Bindea)
 The mRNA-based ssGSEA score for the eosinophils signature of the sample. The score measures the rank of genes in the eosinophils signature relative to all other genes.
 ```
+eosinophils bindea
 eosinophils ssgsea
 ```
 
 ### Macrophages (ssGSEA - Bindea)
 The mRNA-based ssGSEA score for the macrophages signature of the sample. The score measures the rank of genes in the macrophages signature relative to all other genes.
 ```
+macrophages bindea
 macrophages ssgsea
 ```
 
@@ -536,23 +561,27 @@ macrophages ssgsea
 The mRNA-based ssGSEA score for the mast cell signature of the sample. The score measures the rank of genes in the mast cell signature relative to all other genes.
 ```
 mast cells bindea
+mast cells ssgsea
 ```
 
 ### CD56bright NK Cells (ssGSEA - Bindea)
 The mRNA-based ssGSEA score for the CD56bright NK cell signature of the sample. The score measures the rank of genes in the CD56bright NK cell signature relative to all other genes.
 ```
+nk cd56 bright cells bindea
 cd56bright nk cells ssgsea
 ```
 
 ### CD56dim NK Cells (ssGSEA - Bindea)
 The mRNA-based ssGSEA score for the CD56dim NK cell signature of the sample. The score measures the rank of genes in the CD56dim NK cell signature relative to all other genes.
 ```
+nk cd56 dim cells bindea
 cd56dim nk cells ssgsea
 ```
 
 ### NK Cells (ssGSEA - Bindea)
 The mRNA-based ssGSEA score for the NK cell signature of the sample. The score measures the rank of genes in the NK cell signature relative to all other genes.
 ```
+nk cells bindea
 nk cells ssgsea
 ```
 
@@ -560,29 +589,34 @@ nk cells ssgsea
 The mRNA-based ssGSEA score for the neutrophils signature of the sample. The score measures the rank of genes in the neutrophils signature relative to all other genes.
 ```
 neutrophils ssgsea
+neutrophils bindea
 ```
 
 ### PD1 (ssGSEA - Hakimi)
 The mRNA-based ssGSEA score for the PD1 signature of the sample. The score measures the rank of genes in the PD1 signature relative to all other genes.
 ```
+pd1 hakimi
 pd1 ssgsea
 ```
 
 ### PD-L1 (ssGSEA - Hakimi)
 The mRNA-based ssGSEA score for the PD-L1 signature of the sample. The score measures the rank of genes in the PD-L1 signature relative to all other genes.
 ```
+pdl1 hakimi
 pdl1 ssgsea
 ```
 
 ### T Cells (ssGSEA - Bindea)
 The mRNA-based ssGSEA score for the T cells signature of the sample. The score measures the rank of genes in the T cells signature relative to all other genes.
 ```
+t cells bindea
 t cells ssgsea
 ```
 
 ### Helper T Cells (ssGSEA - Bindea)
 The mRNA-based ssGSEA score for the T helper cell signature of the sample. The score measures the rank of genes in the T helper cell signature relative to all other genes.
 ```
+t helper cells bindea
 t helper cells ssgsea
 th cells ssgsea
 ```
@@ -590,6 +624,7 @@ th cells ssgsea
 ### Central Memory T Cells (ssGSEA - Bindea)
 The mRNA-based ssGSEA score for the T central memory cell signature of the sample. The score measures the rank of genes in the T central memory cell signature relative to all other genes.
 ```
+tcm cells bindea
 tcm cells ssgsea
 t central memory cells ssgsea
 ```
@@ -597,6 +632,7 @@ t central memory cells ssgsea
 ### Effector Memory T Cells (ssGSEA - Bindea)
 The mRNA-based ssGSEA score for the T effector memory cell signature of the sample. The score measures the rank of genes in the T effector memory cell signature relative to all other genes.
 ```
+tem cells bindea
 tem cells ssgsea
 t effector memory cells ssgsea
 ```
@@ -604,6 +640,7 @@ t effector memory cells ssgsea
 ### Follicular Helper T Cells (ssGSEA - Bindea)
 The mRNA-based ssGSEA score for the T follicular helper cell signature of the sample. The score measures the rank of genes in the T follicular helper cell signature relative to all other genes.
 ```
+tfm cells bindea
 tfm cells ssgsea
 t follicular helper cells ssgsea
 ```
@@ -611,6 +648,7 @@ t follicular helper cells ssgsea
 ### Gamma Delta T Cells (ssGSEA - Bindea)
 The mRNA-based ssGSEA score for the gamma delta T cell signature of the sample. The score measures the rank of genes in the gamma delta T cell signature relative to all other genes.
 ```
+tgd cells bindea
 tgd cells ssgsea
 gamma delta t cells ssgsea
 ```
@@ -618,6 +656,7 @@ gamma delta t cells ssgsea
 ### T Helper 1 Cells (ssGSEA - Bindea)
 The mRNA-based ssGSEA score for the T helper 1 cell signature of the sample. The score measures the rank of genes in the T helper 1 cell signature relative to all other genes.
 ```
+th1 cells bindea
 th1 cells ssgsea
 t helper 1 cells ssgsea
 ```
@@ -625,6 +664,7 @@ t helper 1 cells ssgsea
 ### T Helper 17 Cells (ssGSEA - Bindea)
 The mRNA-based ssGSEA score for the T helper 17 cell signature of the sample. The score measures the rank of genes in the T helper 17 cell signature relative to all other genes.
 ```
+th17 cells bindea
 th17 cells ssgsea
 t helper 17 cells ssgsea
 ```
@@ -632,6 +672,7 @@ t helper 17 cells ssgsea
 ### T Helper 2 Cells (ssGSEA - Bindea)
 The mRNA-based ssGSEA score for the T helper 2 cell signature of the sample. The score measures the rank of genes in the T helper 2 cell signature relative to all other genes.
 ```
+th2 cells bindea
 th2 cells ssgsea
 t helper 2 cells ssgsea
 ```
@@ -639,6 +680,7 @@ t helper 2 cells ssgsea
 ### Regulator T Cells (ssGSEA - Bindea)
 The mRNA-based ssGSEA score for the regulator T cell signature of the sample. The score measures the rank of genes in the regulator T cell signature relative to all other genes.
 ```
+treg cells bindea
 treg cells ssgsea
 regulator t cells ssgsea
 ```
@@ -646,6 +688,7 @@ regulator t cells ssgsea
 ### Activated Dendritic Cells (ssGSEA - Bindea)
 The mRNA-based ssGSEA score for the activated dendritic cell signature of the sample. The score measures the rank of genes in the activated dendritic cell signature relative to all other genes.
 ```
+adc bindea
 adc ssgsea
 activated dc ssgsea
 activated dendritic cells ssgsea
@@ -654,6 +697,7 @@ activated dendritic cells ssgsea
 ### Immature Dendritic Cells (ssGSEA - Bindea)
 The mRNA-based ssGSEA score for the immature dendritic cell signature of the sample. The score measures the rank of genes in the immature dendritic cell signature relative to all other genes.
 ```
+idc bindea
 idc ssgsea
 immature dc ssgsea
 immature dendritic cells ssgsea
@@ -662,6 +706,7 @@ immature dendritic cells ssgsea
 ### Plasmacytoid Dendritic Cells (ssGSEA - Bindea)
 The mRNA-based ssGSEA score for the plasmacytoid dendritic cell signature of the sample. The score measures the rank of genes in the plasmacytoid dendritic cell signature relative to all other genes.
 ```
+pdc bindea
 pdc ssgsea
 plasmacytoid dc ssgsea
 plasmacytoid dendritic cells ssgsea
