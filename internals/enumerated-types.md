@@ -1,22 +1,7 @@
-This file was auto-generated on 2020-02-10 12:07:28.011712
+This file was auto-generated on 2020-02-11 15:32:14.774165
 
 
 # Subject Enumerated Types
-
-## IPOPResponse2
-```
-NonResponder
-Responder
-NA
-```
-
-## IPOPResponse3
-```
-NonResponder
-Stable
-Responder
-NA
-```
 
 ## MStage
 ```
@@ -56,6 +41,21 @@ NA
 ```
 MALE
 FEMALE
+NA
+```
+
+## ThreeTypeResponse
+```
+NonResponder
+Stable
+Responder
+NA
+```
+
+## TwoTypeResponse
+```
+NonResponder
+Responder
 NA
 ```
 
